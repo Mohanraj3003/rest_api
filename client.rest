@@ -1,0 +1,29 @@
+GET http://localhost:3000/student
+
+###
+
+GET http://localhost:3000/student/moh
+###
+POST http://localhost:3000/student
+Content-Type: application/json
+
+{
+    "name":"moh",
+    "mail":"@gmail",
+    "address":"old_address"
+}
+
+###
+
+PATCH  http://localhost:3000/student/mohan
+Content-Type: application/json
+
+{
+    "address":"new_address",
+    "mail":"new_mailid"
+}
+
+###
+
+DELETE http://localhost:3000/student/moh
+
